@@ -50,7 +50,7 @@
           }
         },
         "values": [
-          { "field": "paciente._id", "component": [1,1] }
+          { "field": "paciente._id", "component": [2,1] }
                    ]
           }
       },
