@@ -52,8 +52,7 @@
         "values": [
           { "field": "paciente._id", "component": [2,1] }
                    ]
-          }
-      },
+          },
       "orc": {
        "configuration": {
           "components": {
@@ -89,4 +88,5 @@
           { "field": "quantity_timing", "component": [27,3],"default": "R"}
                    ]
           }
+      }
     }
