@@ -7,6 +7,7 @@ export function configure(config) {
   throw new Error(`Unknown format: ${config.version}`)
 }
 
+// ADT
 export function getADT04(message, config) {
   return encoder.getAdtEncoder(message).getA04(config)
 }
@@ -19,6 +20,13 @@ export function getADT40(message, config) {
   return encoder.getAdtEncoder(message).getA40(config)
 }
 
+// ORM
+export function getORM01(message, config) {
+  return encoder.getOrmEncoder(message).getO01(config)
+}
+
+
+// SIU
 export function getSIU12(message, config) {
   return encoder.getSiuEncoder(message).getS12(config)
 }
