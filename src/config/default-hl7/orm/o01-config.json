@@ -64,12 +64,12 @@
         "values": [
           { "field": "order_control", "component": [0,1],"default": "NW"},
           { "field": "_id", "component": [1,1] }
-                   ]
+]
           },
       "obr": {
        "configuration": {
           "components": {
-            "count": 2,
+            "count": 15,
             "seperators": [
             ]
           }
