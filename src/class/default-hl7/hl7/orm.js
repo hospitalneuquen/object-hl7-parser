@@ -3,7 +3,7 @@ import O01Config from '../../../config/default-hl7/orm/o01-config.json'
 // import A08Config from '../../../config/default-hl7/adt/a08-config.json'
 // import A40Config from '../../../config/default-hl7/adt/a40-config.json'
 
-export default class ADT {
+export default class ORM {
 
     constructor(message) {
         this.encoder = new Encoder(message)
