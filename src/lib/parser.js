@@ -24,7 +24,10 @@ export function getADT40(message, config) {
 export function getORM01(message, config) {
   return encoder.getOrmEncoder(message).getO01(config)
 }
-
+// ORM
+export function getORU01(message, config) {
+  return encoder.getOruEncoder(message).getR01(config)
+}
 
 // SIU
 export function getSIU12(message, config) {

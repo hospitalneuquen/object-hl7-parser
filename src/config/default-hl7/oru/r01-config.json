@@ -1,0 +1,92 @@
+{
+    "format": "hl7-2.4",
+    "adapter": "default",
+    "delimiters": {
+      "fieldSeperator": "|",
+      "componentSeperator": "^",
+      "subcomponentSeperator": "&",
+      "escapeCharacter": "\\",
+      "repititionCharacter": "~",
+      "segmentSeperator": "\r"
+    },
+    "mappings": {
+      "msh": {
+        "configuration": {
+          "components": {
+            "count": 17,
+            "seperators": [
+              {"position": 5 , "numberOfSeparator": 1}
+            ]
+          }
+        },
+        "values": [
+          { "field": "encoding_character", "component": [0,1], "default": "andes" },
+          { "field": "sending_application", "component": [1,1], "default": "Hospital Provincial Neuquen" },
+          { "field": "sending_facility", "component": [2,1], "default": "Synapse" },
+          { "field": "receiving_application", "component": [3,1], "default": "Hospital Provincial Neuquen" },
+          { "field": "message_datetime", "component": [4,1] },
+          { "field": "security", "component": [5,1] },
+          { "field": "message_type", "component": [6,1], "default": "ORM" },
+          { "field": "message_type_ref", "component": [6,2], "default": "o01" },
+          { "field": "message_control_id", "component": [7,1], "default": "154779" },
+          { "field": "processing_id", "component": [8,1], "default": "P" },
+          { "field": "version_id", "component": [9,1], "default": "2.3" },
+          { "field": "_id", "component": [10,1] },
+          { "field": "continuation_pointer", "component": [11,1] },
+          { "field": "accept_acknowledgment_type", "component": [12,1] },
+          { "field": "application_acknowledgment_type", "component": [13,1] },
+          { "field": "country_code", "component": [14,1], "default": "AR" },
+          { "field": "character_set", "component": [15,1], "default": "UTF-8" },
+          { "field": "principal_language_of_message", "component": [16,1] },
+          { "field": "alternate_character_set", "component": [17,1] }
+        ]
+      },
+      "pid": {
+        "configuration": {
+          "components": {
+            "count": 3,
+            "seperators": [
+            ]
+          }
+        },
+        "values": [
+          { "field": "paciente._id", "component": [2,1] }
+                   ]
+          },
+      "orc": {
+       "configuration": {
+          "components": {
+            "count": 2,
+            "seperators": [
+            ]
+          }
+        },
+        "values": [
+          { "field": "order_control", "component": [0,1],"default": "NW"},
+          { "field": "_id", "component": [1,1] }
+]
+          },
+      "obr": {
+       "configuration": {
+          "components": {
+            "count": 44,
+            "seperators": [
+            ]
+          }
+        },
+        "values": [
+          { "field": "set_id", "component": [0,1]},
+          { "field": "_id", "component": [1,1] },
+          { "field": "solicitud.tipoPrestacion.conceptId", "component": [3,1] },
+          { "field": "solicitud.tipoPrestacion.term", "component": [3,2] },
+          { "field": "solicitud.profesional.apellido", "component": [15,1] },
+          { "field": "solicitud.profesional.nombre", "component": [15,2] },
+          { "field": "diagnostic_service_section_id", "component": [24,1],"default": "DX"},
+          { "field": "result_status", "component": [25,1],"default": "S"},
+          { "field": "quantity_timing", "component": [27,1],"default": "1"},
+          { "field": "ejecucion.fecha", "component": [27,2]},
+          { "field": "quantity_timing", "component": [27,3],"default": "R"}
+                   ]
+          }
+      }
+    }
