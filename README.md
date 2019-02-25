@@ -5,7 +5,7 @@ Convert your object into HL7 message.
 
 # Install
 ```
-$ npm install @rimiti/object-hl7-parser --save
+$ npm install git://github.com/hospitalneuquen/object-hl7-parser.git --save
 ```
 
 
